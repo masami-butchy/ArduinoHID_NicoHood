@@ -1,0 +1,22 @@
+URL
+https://www.arduino.cc/en/Reference/HID
+----------------------------------------------------------------------------------------------------------------------------------------
+HID library
+
+  This core library allows a 32u4 based board, a Due and a Zero to become an HID device, 
+making it possible to plug on it a Mouse or a Keyboard or whatever HID device comes to your mind. 
+The library itself is not intended to be used directly but act as a layer between the USB core and any library implementing HID functions.
+
+  The HID library implements a PluggableUSBModule so the porting to another architecture is straightforward after porting PluggableUSB.
+
+  The only function publicly available is HID.SendReport(uint8_t id, const void* data, int len) which is used to 
+report data to the attached PC (through functions like Mouse.move() )
+
+  NicoHood's HID library implements a lot of HID devices and plugs on base HID
+
+  Reference Home
+
+  Corrections, suggestions, and new documentation should be posted to the Forum.
+
+  The text of the Arduino reference is licensed under a Creative Commons Attribution-ShareAlike 3.0 License. 
+Code samples in the reference are released into the public domain.
